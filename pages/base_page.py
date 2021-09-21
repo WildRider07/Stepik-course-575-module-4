@@ -1,4 +1,4 @@
-﻿from selenium import webdriver
+from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 class BasePage():
     def __init__(self, browser, url, timeout=10):
