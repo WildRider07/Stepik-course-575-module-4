@@ -1,25 +1,17 @@
 from selenium.webdriver.common.by import By
-#class MainPageLocators():
-     
 
 class ProductPageLocators():
-    ADD_BASKET = (By.CSS_SELECTOR, ".btn-add-to-basket")
-    ADD_MSG = (By.XPATH,"//strong[text() = 'Coders at Work']")
-    BASKET_MSG = (By.XPATH,"//p[contains (text(), 'basket')]/strong")
-    PRICE = (By.CSS_SELECTOR, "p.price_color")
-    SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert-success")
-       #//div[@id='messages']/div[1]/div
-    #div:nth-of-type(1) > .alertinner
-
+    ADD_TO_BASKET = (By.CSS_SELECTOR, ".btn-add-to-basket")
+    ADDED_MSG = (By.CSS_SELECTOR, "div:nth-of-type(1) > .alertinner")
+    ADDED_NAME = (By.CSS_SELECTOR, "div:nth-of-type(1) > .alertinner > strong")
+    PRODUCT_NAME = (By.TAG_NAME, "h1")
+    BASKET_TOTAL_MSG = (By.CSS_SELECTOR, ".alertinner > p:nth-of-type(1)")
+    BASKET_TOTAL_PRICE = (By.CSS_SELECTOR, ".alertinner > p strong")
+    PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main > .price_color")
+               
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
- 
-class LoginFormLocators:
-    EMAIL = (By.CSS_SELECTOR, "input#id_login-username")
-    PASSWORD = (By.CSS_SELECTOR, "input#id_login-password")
-    LOG_IN = (By.CSS_SELECTOR, "button[name='login_submit']")
-    FORGOT = (By.CSS_SELECTOR, "#login_form a")
 
 class RegisterFormLocators:
     EMAIL = (By.CSS_SELECTOR, "input#id_registration-email")
@@ -29,7 +21,6 @@ class RegisterFormLocators:
 
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
-    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     VIEW_BASKET = (By.CSS_SELECTOR, ".btn-group a")
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 

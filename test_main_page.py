@@ -3,7 +3,7 @@ from pages.login_page import LoginPage
 from pages.basket_page import BasketPage
 import pytest
 
-#@pytest.mark.skip
+
 @pytest.mark.login_guest
 class TestLoginFromMainPage():
     

@@ -43,10 +43,7 @@ class BasePage():
     def go_to_login_page(self):
         login_link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
         login_link.click()
-        #return LoginPage(browser=self.browser, url=self.browser.current_url)
-        #alert = self.browser.switch_to.alert
-        #alert.accept()
-
+        
     def go_to_basket_page(self):
         view_basket_button = self.browser.find_element(*BasePageLocators.VIEW_BASKET)
         view_basket_button.click()
